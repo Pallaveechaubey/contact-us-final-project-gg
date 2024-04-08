@@ -1,0 +1,86 @@
+    /* body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    } */
+
+    /* .parallox{ */
+  /* display: flex;
+  justify-content: center; */
+  /* align-items: center;
+  margin-top:0;
+  height: 100vh; */
+  /* width: 100%; */
+  /* background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQcPWLNkJKwD9VDGO5MN98Z-ei--d2SZSoxag&s'); /* Add your background image URL here */
+  /* background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;  */
+
+
+/* */
+    .container {
+        margin: auto;
+        /* margin-top: 33px; */
+         /* margin: 0;
+        padding: 0; */
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh; */
+
+        display: flex;
+        flex-direction: row; /* Divide vertically */
+        flex-direction: row; /* Divide vertically */
+        width: 100%; /* Take full width */
+        max-width: 1000px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .left-section, .right-section {
+        flex: 1; /* Equal width for both sections */
+        padding: 20px;
+    }
+    .left-section {
+        background-color: #007bff;
+        color: #fff;
+        text-align: center;
+    }
+    .right-section {
+        padding-top: 40px;
+    }
+    h2 {
+        text-align: center;
+        color: #007bff;
+        margin-bottom: 20px;
+    }
+    .form-group {
+        margin-bottom: 20px;
+    }
+    label {
+        display: block;
+        font-weight: bold;
+    }
+    input[type="text"], input[type="email"], textarea, select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    button {
+        width: 100%;
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
