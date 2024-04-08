@@ -2,7 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import userRoutes from './routes/user.route.js';
-import authRoutes from './routes/auth.route.js'
+import authRoutes from './routes/auth.route.js';
+import path from 'path';
+
 
 // inilise dotenv
 dotenv.config();
@@ -14,8 +16,13 @@ mongoose.connect(process.env.MONGO).then(()=>{
 })
 // mongodb+srv://pallaveexchaubey:<password>@april.k7p4edl.mongodb.net/?retryWrites=true&w=majority&appName=april
 
-
+const __dirname = path.resolve();
 const app = express();
+
+app.use(express.static(path.join(__dirname,'/client/dist')))
+app.get('*',(req,res) =>{
+   res.sendFile(path.join(__dirname, 'client', 'dist' ,'index.html'))
+});
 app.use(express.json());
 
 app.listen(3000,()=>{
